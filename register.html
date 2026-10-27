@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Event Registration</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <h1>Event Registration</h1>
+  <a href="index.html">Back to Events</a>
+  <form onsubmit="alert('Registered successfully!'); return false;">
+    <p>Name: <input type="text" required></p>
+    <p>Roll No: <input type="text" required></p>
+    <p>Event:
+      <select>
+        <option>Tech Fest</option>
+        <option>Coding Contest</option>
+        <option>Cultural Night</option>
+      </select>
+    </p>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
