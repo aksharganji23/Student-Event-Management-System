@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Manage Events</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <h1>Manage Events (Admin)</h1>
+  <a href="index.html">Back to Events</a>
+  <p>Event name: <input id="ename"> Date: <input id="edate" type="date">
+  <button onclick="addEvent()">Add Event</button></p>
+  <table border="1" id="tbl">
+    <tr><th>Event</th><th>Date</th></tr>
+  </table>
+  <script>
+    function addEvent() {
+      var row = document.getElementById("tbl").insertRow();
+      row.insertCell(0).innerText = document.getElementById("ename").value;
+      row.insertCell(1).innerText = document.getElementById("edate").value;
+    }
+  </script>
+</body>
+</html>
